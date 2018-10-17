@@ -87,3 +87,24 @@ even.each {|x| puts x if x % 2 == 0}
 add_number = users["Erik"][:lottery_numbers]
 add_number << [7]
 puts add_number
+
+# 8. Change Erik's hometown to Edinburgh
+
+users["Erik"][:home_town] = ["Edinburgh"]
+p users["Erik"][:home_town]
+
+# 9. Add a pet dog to Erik called "Fluffy"
+
+new_pet = users["Erik"][:pets]
+new_pet << {:name => "Tomi"} << {:species => "Dog"}
+p users
+
+# 10. Add another person to the users hash
+
+users["Thomas"] = {}
+users["Thomas"][:twitter] = "iseedeadpeople"
+users["Thomas"][:home_town] = "Aberdeen"
+users["Thomas"][:lottery_numbers] = [1, 2, 3, 4]
+p users
+#
+#
